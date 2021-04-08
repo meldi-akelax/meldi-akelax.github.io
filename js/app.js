@@ -21,7 +21,7 @@ function init() {
     viewTransition.style.width = '100vw';
     const introMessage = document.createElement('div');
     introMessage.classList.add('intro-message');
-    const message = 'Bienvenu_Chez_Merdi_Akelax !'
+    const message = 'Bienvenu_Chez_Merdi_Akelax !';
     for (lettle of message) {
         lettleSpan = document.createElement('div');
         lettleSpan.classList.add('anime-lettle');
@@ -96,10 +96,10 @@ function transiteView(v, x, s, direction = 'out', time = 1500) {
         },
         delay: 250, // All properties except 'scale' inherit 250ms delay
         complete: function(anim) {
-            document.body.style.display = 'block';
             let view = document.querySelector(v);
             if (anim.completed) {
                 if (direction == 'in') {
+                    document.body.style.display = 'block';
                     toggleMenuContnair.classList.replace("toggle-menu-hidden", "toggle-menu-visible");
                     view.classList.replace("section-hidden", "section-visible");
                     document.querySelector('.view-title').textContent = viewTitle[v];
