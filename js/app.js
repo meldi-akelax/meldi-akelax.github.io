@@ -1,5 +1,6 @@
 const header = document.querySelector('header');
-const viewTransition = document.getElementById('view-transition');
+/* 
+const viewTransition = document.getElementById('view-transition'); */
 const btnHome = document.getElementById('btn-home');
 const btnProjects = document.getElementById('btn-projects');
 const btnCv = document.getElementById('btn-cv');
@@ -17,8 +18,9 @@ let display = "";
 window.onload = init;
 
 function init() {
-    viewTransition.style.height = '100vh';
-    viewTransition.style.width = '100vw';
+    /* 
+        viewTransition.style.height = '100vh';
+        viewTransition.style.width = '100vw'; */
     const introMessage = document.createElement('div');
     introMessage.classList.add('intro-message');
     const message = 'Bienvenu_Chez_Merdi_Akelax !';
@@ -28,7 +30,8 @@ function init() {
         lettleSpan.textContent = lettle;
         introMessage.appendChild(lettleSpan);
     }
-    viewTransition.appendChild(introMessage);
+    /* 
+        viewTransition.appendChild(introMessage); */
 
     transiteView(".home", '0', 1, 'in', 2);
     transiteView(".projects", 0, 0.3, 'out', 0.1);
@@ -36,27 +39,25 @@ function init() {
     seeView(btnHome, ".home");
     seeView(btnProjects, ".projects");
     seeView(btnCv, ".cv");
-    anime({
-        targets: '.anime-lettle',
-        translateY: 300,
-        /* 
-                translateX: 100, */
-        delay: function(el, i, l) {
-            return i * 15;
-        },
-        endDelay: function(el, i, l) {
-            return (l - i) * 200;
-        }
-    });
-    anime({
-        targets: '#view-transition',
-        translateY: {
-            value: 1500,
-            duration: 2000,
-            easing: 'easeInOutQuart'
-        },
-        delay: 2500 // All properties except 'scale' inherit 250ms delay
-    });
+    /*     anime({
+            targets: '.anime-lettle',
+            translateY: 300,
+            delay: function(el, i, l) {
+                return i * 15;
+            },
+            endDelay: function(el, i, l) {
+                return (l - i) * 200;
+            }
+        }); */
+    /*    anime({
+           targets: '#view-transition',
+           translateY: {
+               value: 1500,
+               duration: 2000,
+               easing: 'easeInOutQuart'
+           },
+           delay: 2500 // All properties except 'scale' inherit 250ms delay
+       }); */
     nextView()
 
 }
