@@ -8433,6 +8433,10 @@ input[type=range]::-ms-thumb {
   margin-top: 50px;
 }
 
+.image-drawing {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8448,6 +8452,7 @@ input[type=range]::-ms-thumb {
 body {
   color: white;
   overflow: hidden;
+  position: fixed;
   background-image: linear-gradient(rgba(0, 19, 36, 0.438), rgba(7, 0, 15, 0.849)), url("../../images/Circuit.svg");
 }
 

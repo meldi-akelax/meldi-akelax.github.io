@@ -10,6 +10,37 @@
             "Bonjour le monde, je suis merdi Akelax j'ai 18 ans,je suis Programmeur Informatique & electronicien.",
             "Comme Programmeur je fait du développement web, desktop, mobile, Ai(deep learning).",
             "En electronique, je fait de la domotique, la mecatronique, ..."
+        ],
+        "competences": [{
+                "informatic": {
+                    "drawing": "./images/undraw_version_control_9bpv.svg",
+                    "para": [
+                        "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
+                        "j'ai  des base solide au machine learning"
+                    ],
+                    "langages": [
+                        ["HTTL5", 79, "yellow", "grey"],
+                        ["CSS3", 75, "yellow", "red"],
+                        ["Javascript", 65, "yellow", "black"],
+                        ["Python", 90, "blue", "yellow"],
+                        ["C++", 55, "blue", "light-blue"]
+                    ],
+                    "technos": [
+                        ["materializecss", 55, "rose", "rose"],
+                        ["Django", 79, "_", "_"],
+                        ["react.js", 75, "blue", "blue"],
+                        ["react native", 75, "blue", "blue"],
+                        ["electron.jss", 55, "rose", "rose"],
+                        ["opencv", 65, "yellow", "blue"],
+                        ["tensorflow", 90, "orange", "yellow"]
+                    ]
+                }
+            },
+            {
+                "electronic": {
+                    "drawing": "./images/undraw_circuit_sdmr.svg"
+                }
+            }
         ]
     }
 }
