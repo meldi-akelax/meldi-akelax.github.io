@@ -28,11 +28,11 @@
                     "technos": [
                         ["materializecss", 55, "rose", "rose"],
                         ["Django", 79, "_", "_"],
-                        ["react.js", 75, "blue", "blue"],
-                        ["react native", 75, "blue", "blue"],
-                        ["electron.jss", 55, "rose", "rose"],
-                        ["opencv", 65, "yellow", "blue"],
-                        ["tensorflow", 90, "orange", "yellow"]
+                        ["react.js", 40, "blue", "blue"],
+                        ["react native", 10, "blue", "blue"],
+                        ["electron.js", 30, "rose", "rose"],
+                        ["opencv", 60, "yellow", "blue"],
+                        ["tensorflow", 35, "orange", "yellow"]
                     ]
                 }
             },
