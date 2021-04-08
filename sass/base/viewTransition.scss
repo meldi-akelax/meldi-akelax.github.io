@@ -1,0 +1,19 @@
+//code essaie
+.view-transition {
+    position: absolute;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(29, 72, 214, 0.959)), /* url('../../images/Circuit.svg') */
+    ;
+    /*margin-top: -50vh;
+    margin-left: -50vw;
+    */
+    z-index: 99;
+    .intro-message {
+        text-align: center;
+        font-size: 50px;
+        .anime-lettle {
+            z-index: 1;
+            position: relative;
+            display: inline-block;
+        }
+    }
+}

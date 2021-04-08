@@ -1,0 +1,8 @@
+{
+    "me": [
+        { "firstName": "Merdi" },
+        { "lastName": "Akelax" },
+        { "picture": "/images/moi.jpg" },
+        { "biographie": "je suis dans la technologie pour le développement de mon pas" }
+    ]
+}

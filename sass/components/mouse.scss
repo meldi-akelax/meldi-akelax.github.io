@@ -1,0 +1,23 @@
+#cursor {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+    mix-blend-mode: difference;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .cursor__circle__visible {
+        width: 100px;
+        height: 100px;
+        margin-top: -50%;
+        margin-left: -50%;
+        border-radius: 50%;
+        border: solid 1px rgba(117, 234, 255, 0.64);
+    }
+    .cursor__circle__hidden {
+        display: none;
+    }
+}

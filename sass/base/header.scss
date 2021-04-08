@@ -1,0 +1,14 @@
+@import '../components/mouse.scss';
+@import '../components/btn.scss';
+.header {
+    position: fixed;
+    height: 20vh;
+    width: 100vw;
+    z-index: 1;
+    &-visible {
+        z-index: 1;
+    }
+    &-hidden {
+        z-index: -2;
+    }
+}
