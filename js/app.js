@@ -96,6 +96,7 @@ function transiteView(v, x, s, direction = 'out', time = 1500) {
         },
         delay: 250, // All properties except 'scale' inherit 250ms delay
         complete: function(anim) {
+            document.body.style.display = 'block';
             let view = document.querySelector(v);
             if (anim.completed) {
                 if (direction == 'in') {
