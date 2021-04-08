@@ -8391,17 +8391,18 @@ input[type=range]::-ms-thumb {
 }
 
 .header-shape img {
-  width: 70px;
+  width: 80px;
 }
 
 .header-image img {
   z-index: 2;
   width: 250px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  background-color: rgba(158, 199, 233, 0.815);
+  border-radius: 70% 100% 60% 50%;
+  -webkit-border-radius: 70% 60% 100% 50%;
+  -moz-border-radius: 70% 60% 100% 50%;
+  -ms-border-radius: 70% 60% 100% 50%;
+  -o-border-radius: 70% 60% 100% 50%;
 }
 
 .home-header-contain {

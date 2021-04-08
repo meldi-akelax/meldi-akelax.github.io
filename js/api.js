@@ -6,8 +6,9 @@ const electronicDrawing = document.getElementById('electronic-drawing');
 const informaticLangages = document.getElementById('informatic-langages');
 const devTechnos = document.getElementById('dev-technos');
 const informaticPara = document.getElementById('informatic-para');
+/* 
+fetch('http://localhost:3000/me') */
 
-/* fetch('http://localhost:3000/me') */
 fetch("http://my-json-server.typicode.com/merdi-akelax/merdi-akelax.github.io/me")
     .then(function(response) {
         return response.json();
