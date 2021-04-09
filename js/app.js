@@ -47,12 +47,12 @@ function nextView() {
     btnNextView = document.getElementsByClassName('btn-next-view');
     btnNextView[0].addEventListener('click', () => {
         document.querySelector('.projects').classList.replace("section-hidden", "section-visible");
-        transiteView(".home", '-33%', 0.25, 'out', 700);
+        transiteView(".home", '-33%', 0.27, 'out', 700);
         transiteView(".projects", 0, 1, 'in', 1700);
     })
     btnNextView[1].addEventListener('click', () => {
         document.querySelector('.cv').classList.replace("section-hidden", "section-visible");
-        transiteView(".projects", 0, 0.25, 'out', 700);
+        transiteView(".projects", 0, 0.27, 'out', 700);
         transiteView(".cv", '0', 1, 'in', 1700);
     })
     btnNextView[2].addEventListener('click', () => {
@@ -60,7 +60,7 @@ function nextView() {
         /* 
                 document.querySelector('.cv').classList.replace("section-visible", "section-hidden"); */
         transiteView(".home", '0', 1, 'in');
-        transiteView(".cv", '33%', 0.25);
+        transiteView(".cv", '33%', 0.27);
     })
 }
 
@@ -128,9 +128,9 @@ function seeView(btn, view) {
 
 toggleMenu.addEventListener('click', () => {
     toggleMenuContnair.classList.replace("toggle-menu-visible", "toggle-menu-hidden");
-    transiteView(".home", '-33%', 0.25);
-    transiteView(".projects", 0, 0.25);
-    transiteView(".cv", '33%', 0.25);
+    transiteView(".home", '-33%', 0.27);
+    transiteView(".projects", 0, 0.27);
+    transiteView(".cv", '33%', 0.27);
 });
 
 function parallaxMouse() {
