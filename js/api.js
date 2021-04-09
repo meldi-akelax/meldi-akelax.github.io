@@ -9,7 +9,7 @@ const informaticPara = document.getElementById('informatic-para');
 
 
 /* fetch('http://localhost:3000/me') */
-fetch("http://my-json-server.typicode.com/merdi-akelax/merdi-akelax.github.io/me").then(function(response) {
+fetch("https://my-json-server.typicode.com/merdi-akelax/merdi-akelax.github.io/me").then(function(response) {
         return response.json();
     })
     .then(function(me) {
