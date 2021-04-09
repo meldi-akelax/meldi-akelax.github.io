@@ -9,14 +9,19 @@ const informaticPara = document.getElementById('informatic-para');
 
 
 /* fetch('http://localhost:3000/me') */
-fetch("https://my-json-server.typicode.com/merdi-akelax/merdi-akelax.github.io/me").then(function(response) {
+/* 
+fetch("https://my-json-server.typicode.com/merdi-akelax/merdi-akelax.github.io/me") */
+
+const link = 'http://localhost:3000';
+
+fetch(link + '/me').then(function(response) {
         return response.json();
     })
     .then(function(me) {
-        main(me);
+        showMe(me);
     });
 
-function main(me) {
+function showMe(me) {
     myPicture.src = me.identity.picture;
     myBiography.textContent = me.identity.biography;
     for (para of me.about) {
@@ -24,16 +29,29 @@ function main(me) {
         paraElement.textContent = para;
         aboutPara.appendChild(paraElement);
     }
-    informatiqueDrawing.src = me.competences[0].informatic.drawing;
+    contacts(me.contacts);
+}
 
-    for (para of me.competences[0].informatic.para) {
+fetch('http://localhost:3000/competences').then(function(response) {
+        return response.json();
+    })
+    .then(function(competences) {
+        dev(competences);
+        technician(competences);
+    });
+
+function dev(competences) {
+
+    informatiqueDrawing.src = competences[0].informatic.drawing;
+
+    for (para of competences[0].informatic.para) {
         let paraElement = document.createElement('p');
         paraElement.textContent = para;
         informaticPara.appendChild(paraElement);
     }
 
     let langageListContainerElement = document.createElement('ul');
-    for (langage of me.competences[0].informatic.langages) {
+    for (langage of competences[0].informatic.langages) {
         let langageElement = document.createElement('li');
         let langageTitle = document.createElement('h6');
         let progressContainerElement = document.createElement('div');
@@ -51,7 +69,7 @@ function main(me) {
 
 
     let technosListContainerElement = document.createElement('ul');
-    for (techno of me.competences[0].informatic.technos) {
+    for (techno of competences[0].informatic.technos) {
         let technoElement = document.createElement('li');
         let technoTitle = document.createElement('h6');
         let technoProgressContainerElement = document.createElement('div');
@@ -66,34 +84,23 @@ function main(me) {
         technosListContainerElement.appendChild(technoElement);
     }
     devTechnos.appendChild(technosListContainerElement);
-    technician(me);
-    contacts(me);
 }
 
-function createElement(tag, container, textContent, className) {
-    let element = document.createElement(tag);
-    element.classList.add(className);
-    if (textContent) {
-        element.textContent = textContent;
-    }
-    container.appendChild(element);
-    return element;
-}
 
-function technician(me) {
-    electronicDrawing.src = me.competences[1].electronic.drawing;
+function technician(competences) {
+    electronicDrawing.src = competences[1].electronic.drawing;
     const technicPara = document.getElementById('technic-para');
     const technicDomaine = document.getElementById('technic-domaine');
     const technicTechnos = document.getElementById('technic-technos');
 
-    for (para of me.competences[1].electronic.para) {
+    for (para of competences[1].electronic.para) {
         let paraElement = document.createElement('p');
         paraElement.textContent = para;
         technicPara.appendChild(paraElement);
     }
 
     let langageListContainerElement = document.createElement('ul');
-    for (langage of me.competences[1].electronic.domaines) {
+    for (langage of competences[1].electronic.domaines) {
         let langageElement = document.createElement('li');
         let langageTitle = document.createElement('h6');
         let progressContainerElement = document.createElement('div');
@@ -111,7 +118,7 @@ function technician(me) {
 
 
     let technosListContainerElement = document.createElement('ul');
-    for (techno of me.competences[1].electronic.technos) {
+    for (techno of competences[1].electronic.technos) {
         let technoElement = document.createElement('li');
         let technoTitle = document.createElement('h6');
         let technoProgressContainerElement = document.createElement('div');
@@ -128,26 +135,79 @@ function technician(me) {
     technicTechnos.appendChild(technosListContainerElement);
 }
 
-function contacts(me) {
+function contacts(contacts) {
     const emailLink = document.getElementById('email-link');
     const telLink = document.getElementById('tel-link');
     const whatsappLink = document.getElementById('whatsapp-link');
     const twiterLink = document.getElementById('twiter-link');
     const facebookLink = document.getElementById('facebook-link');
-    emailLink.href = me.contacts.email;
-    createElement("span", emailLink, me.contacts.email, "right");
-    twiterLink.href = me.contacts.twiter;
-    createElement("span", twiterLink, me.contacts.twiter, "right");
-    /* 
-        alert(me.contacts.facebook); */
-    facebookLink.href = me.contacts.facebook;
-    createElement("span", facebookLink, me.contacts.facebook, "right");
-    whatsappLink.href = me.contacts.whatsapp;
-    createElement("span", whatsappLink, me.contacts.whatsapp, "right");
-    telLink.href = me.contacts.tel;
-    createElement("span", telLink, me.contacts.tel, "right");
+    emailLink.href = contacts.email;
+    createElement("span", emailLink, contacts.email, ["right"]);
+    twiterLink.href = contacts.twiter;
+    createElement("span", twiterLink, contacts.twiter, ["right"]);
+    facebookLink.href = contacts.facebook;
+    createElement("span", facebookLink, contacts.facebook, ["right"]);
+    whatsappLink.href = contacts.whatsapp;
+    createElement("span", whatsappLink, contacts.whatsapp, ["right"]);
+    telLink.href = contacts.tel;
+    createElement("span", telLink, contacts.tel, ["right"]);
 }
 
-function projects(p) {
+fetch(link + '/projects').then(function(response) {
+        return response.json();
+    })
+    .then(function(allProjects) {
+        showProjets(allProjects);
+    });
 
+function showProjets(allProjects) {
+    for (projects of allProjects.informatic) {
+        addcard(projects);
+    }
+}
+
+
+function addcard(project) {
+    const informaticProjectsContainer = document.getElementById('informatic-projects');
+    /* 
+    <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/projects/Screenshot_2021-04-07 Kinshasa Digital Agence de développement(1).png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                <p><a href="#">This is a link</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+     */
+    let cardContainer = createElement("div", informaticProjectsContainer, "", ["col", "s12", "m6", "l4"]);
+    let card = createElement("div", cardContainer, "", ["card"]);
+    let cardImage = createElement('div', card, "", ["card-image", "waves-effect", "waves-block", "waves-light"]);
+    let image = createElement("img", cardImage, "", ["activator"]);
+    image.src = project.drawing;
+    let cardContent = createElement('div', card, "", ["card-content"]);
+    cardTitle = createElement("span", cardContent, project.title, ["card-title", "activator", "grey-text", "text-darken-4"]);
+    let cardLink = createElement('p', cardContent, '');
+    let link = createElement('a', cardLink, 'Voir le site');
+    link.href = project.link;
+    /* return card; */
+}
+
+function createElement(tag, container, textContent, className) {
+    let element = document.createElement(tag);
+    if (className) {
+        for (cl of className) {
+            element.classList.add(cl);
+        }
+
+    }
+    if (textContent != "") {
+        element.textContent = textContent;
+    }
+    container.appendChild(element);
+    return element;
 }

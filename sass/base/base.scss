@@ -56,8 +56,18 @@ section {
 
 .section-visible {
     z-index: 2;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
 .section-hidden {
+    border-radius: 20px !important;
     z-index: -1;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
 }

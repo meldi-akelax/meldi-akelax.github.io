@@ -11,98 +11,106 @@
             "Comme Programmeur je fait du développement web, desktop, mobile, Ai(deep learning).",
             "En electronique, je fait de la domotique, la mecatronique, ..."
         ],
-        "competences": [{
-                "informatic": {
-                    "drawing": "./images/undraw_version_control_9bpv.svg",
-                    "para": [
-                        "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
-                        "j'ai  des base solide au machine learning"
-                    ],
-                    "langages": [
-                        ["HTTL5", 79, "black", "yellow"],
-                        ["CSS3", 75, "black", "yellow"],
-                        ["JavaScript", 65, "black", "yellow"],
-                        ["Python", 90, "blue", "yellow"],
-                        ["C++", 55, "blue", "light-blue"]
-                    ],
-                    "technos": [
-                        ["materializecss", 70, "red", "red"],
-                        ["Django", 79, "_", "_"],
-                        ["react.js", 40, "blue", "blue"],
-                        ["react native", 17, "blue", "blue"],
-                        ["electron.js", 40, "bleu", "_"],
-                        ["opencv", 60, "yellow", "blue"],
-                        ["tensorflow", 35, "orange", "red"]
-                    ]
-                }
-            },
-            {
-                "electronic": {
-                    "drawing": "./images/undraw_circuit_sdmr.svg",
-                    "para": [
-                        "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
-                        "j'ai  des base solide au machine learning"
-                    ],
-                    "domaines": [
-                        ["Electronique analogique", 59, "black", "yellow"],
-                        ["Electronique numique", 75, "black", "yellow"],
-                        ["Mécatronque", 65, "black", "yellow"],
-                        ["Robotique", 40, "blue", "yellow"],
-                        ["Electricité batiment", 59, "blue", "light-blue"]
-                    ],
-                    "technos": [
-                        ["Pic", 70, "red", "red"],
-                        ["ESp32", 79, "_", "_"],
-                        ["Arduino", 40, "blue", "blue"],
-                        ["Raspeberry", 17, "blue", "blue"],
-                        ["d", 40, "bleu", "_"],
-                        ["opencv", 60, "yellow", "blue"],
-                        ["A.P.I", 35, "orange", "red"]
-                    ]
-                }
-            }
-        ],
         "contacts": {
             "email": "mailto:akelaxmerdi@gmail.com",
             "twiter": "https://twitter.com/AkelaxM",
             "facebook": "https://web.facebook.com/merdi.akelax.3",
             "whatsapp": "tel:+243816755166",
             "tel": "tel:+243816755166"
-        },
-        "projects": {
-            "informatic": [{
-                "drawing": "./images/undraw_circuit_sdmr.svg",
-                "title": "xwlxc",
-                "para": [
-                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
-                    "j'ai  des base solide au machine learning"
-                ],
-                "link": "x,;cx"
-            }, {
-                "drawing": "./images/undraw_circuit_sdmr.svg",
-                "title": "xwlxc",
-                "para": [
-                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
-                    "j'ai  des base solide au machine learning"
-                ],
-                "link": "x,;cx"
-            }, {
-                "drawing": "./images/undraw_circuit_sdmr.svg",
-                "title": "xwlxc",
-                "para": [
-                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
-                    "j'ai  des base solide au machine learning"
-                ],
-                "link": "x,;cx"
-            }, {
-                "drawing": "./images/undraw_circuit_sdmr.svg",
-                "title": "xwlxc",
-                "para": [
-                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
-                    "j'ai  des base solide au machine learning"
-                ],
-                "link": "x,;cx"
-            }]
         }
+    },
+    "competences": [{
+            "informatic": {
+                "drawing": "./images/undraw_version_control_9bpv.svg",
+                "para": [
+                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
+                    "j'ai  des base solide au machine learning"
+                ],
+                "langages": [
+                    ["HTTL5", 79, "black", "yellow"],
+                    ["CSS3", 75, "black", "yellow"],
+                    ["JavaScript", 65, "black", "yellow"],
+                    ["Python", 90, "blue", "yellow"],
+                    ["C++", 55, "blue", "light-blue"]
+                ],
+                "technos": [
+                    ["materializecss", 70, "red", "red"],
+                    ["Django", 79, "_", "_"],
+                    ["react.js", 40, "blue", "blue"],
+                    ["react native", 17, "blue", "blue"],
+                    ["electron.js", 40, "bleu", "_"],
+                    ["opencv", 60, "yellow", "blue"],
+                    ["tensorflow", 35, "orange", "red"]
+                ]
+            }
+        },
+        {
+            "electronic": {
+                "drawing": "./images/undraw_circuit_sdmr.svg",
+                "para": [
+                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
+                    "j'ai  des base solide au machine learning"
+                ],
+                "domaines": [
+                    ["Electronique analogique", 59, "black", "yellow"],
+                    ["Electronique numique", 75, "black", "yellow"],
+                    ["Mécatronque", 65, "black", "yellow"],
+                    ["Robotique", 40, "blue", "yellow"],
+                    ["Electricité batiment", 59, "blue", "light-blue"]
+                ],
+                "technos": [
+                    ["Pic", 70, "red", "red"],
+                    ["ESp32", 79, "_", "_"],
+                    ["Arduino", 40, "blue", "blue"],
+                    ["Raspeberry", 17, "blue", "blue"],
+                    ["d", 40, "bleu", "_"],
+                    ["opencv", 60, "yellow", "blue"],
+                    ["A.P.I", 35, "orange", "red"]
+                ]
+            }
+        }
+    ],
+    "projects": {
+        "informatic": [{
+            "drawing": "./images/projects/Akelax-Technologie(3).png",
+            "title": "le site d'akelax technologie",
+            "para": [
+                "le site de présentation de Akelax technoligie",
+                "développer avec amour pour une meilleure expérience web"
+            ],
+            "link": "https://akelax-technology.github.io/"
+        }, {
+            "drawing": "./images/projects/Kinshasa Digital Agence de développement.png",
+            "title": "Kinshasa digital academy",
+            "para": [
+                "ceci est entièrement développer par merdi Akelax",
+                "développer avec amour pour une meilleure expérience web"
+            ],
+            "link": "https://merdi-akelax.github.io/page_acceil_et_emploi_de_la_kda/"
+        }, {
+            "drawing": "./images/projects/Aurora — computing.png",
+            "title": "Araura computing",
+            "para": [
+                "ceci est entièrement développer par merdi Akelax",
+                "développer avec amour pour une meilleure expérience web"
+            ],
+            "link": "https://auroracomputing.herokuapp.com/"
+        }, {
+            "drawing": "./images/projects/Repertoire de contact.png",
+            "title": "appli web contact-store",
+            "para": [
+                "ceci est entièrement développer par merdi Akelax",
+                "développer avec amour pour une meilleure expérience web"
+            ],
+            "link": "#"
+        }, {
+            "drawing": "./images/projects/site_Merd_Akelax.png",
+            "title": "Ce site (merdi-akelax.github.io)",
+            "para": [
+                "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
+                "j'ai  des base solide au machine learning"
+            ],
+            "link": "https://merdi-akelax.github.io"
+        }]
     }
 }
