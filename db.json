@@ -52,20 +52,18 @@
                     "j'ai  des base solide au machine learning"
                 ],
                 "domaines": [
-                    ["Electronique analogique", 59, "black", "yellow"],
-                    ["Electronique numique", 75, "black", "yellow"],
-                    ["Mécatronque", 65, "black", "yellow"],
-                    ["Robotique", 40, "blue", "yellow"],
-                    ["Electricité batiment", 59, "blue", "light-blue"]
+                    ["Electronique analogique", 59, "black", "grey"],
+                    ["Electronique numique", 75, "red", "yellow"],
+                    ["Mécatronque", 65, "light-blue", "red"],
+                    ["Robotique", 40, "black", "red"],
+                    ["Electricité batiment", 59, "red", "yellow"]
                 ],
                 "technos": [
                     ["Pic", 70, "red", "red"],
                     ["ESp32", 79, "_", "_"],
-                    ["Arduino", 40, "blue", "blue"],
-                    ["Raspeberry", 17, "blue", "blue"],
-                    ["d", 40, "bleu", "_"],
-                    ["opencv", 60, "yellow", "blue"],
-                    ["A.P.I", 35, "orange", "red"]
+                    ["Arduino", 90, "blue", "blue"],
+                    ["Raspeberry", 45, "red", "grey"],
+                    ["A.P.I", 35, "orange", "grey"]
                 ]
             }
         }
@@ -89,7 +87,7 @@
             "link": "https://merdi-akelax.github.io/page_acceil_et_emploi_de_la_kda/"
         }, {
             "drawing": "./images/projects/Aurora — computing.png",
-            "title": "Araura computing",
+            "title": "Araura computing College",
             "para": [
                 "ceci est entièrement développer par merdi Akelax",
                 "développer avec amour pour une meilleure expérience web"

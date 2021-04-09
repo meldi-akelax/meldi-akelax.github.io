@@ -11,9 +11,9 @@ const informaticPara = document.getElementById('informatic-para');
 /* fetch('http://localhost:3000/me') */
 /* 
 fetch("https://my-json-server.typicode.com/merdi-akelax/merdi-akelax.github.io/me") */
-const localLink = "http://localhost:3000";
-const onlineLink = "https://my-json-server.typicode.com/merdi-akelax/merdi-akelax.github.io";
-let link = onlineLink;
+const localApi = "http://localhost:3000";
+const onlineApi = "https://my-json-server.typicode.com/merdi-akelax/merdi-akelax.github.io";
+let link = onlineApi;
 
 fetch(link + '/me').then(function(response) {
         return response.json();
@@ -33,7 +33,7 @@ function showMe(me) {
     contacts(me.contacts);
 }
 
-fetch('http://localhost:3000/competences').then(function(response) {
+fetch(link + '/competences').then(function(response) {
         return response.json();
     })
     .then(function(competences) {
