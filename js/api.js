@@ -8,9 +8,12 @@ const devTechnos = document.getElementById('dev-technos');
 const informaticPara = document.getElementById('informatic-para');
 
 
+/* fetch('http://localhost:3000/me') */
+/* 
+fetch("https://my-json-server.typicode.com/merdi-akelax/merdi-akelax.github.io/me") */
 const localLink = "http://localhost:3000";
 const onlineLink = "https://my-json-server.typicode.com/merdi-akelax/merdi-akelax.github.io";
-const link = onlineLink;
+let link = onlineLink;
 
 fetch(link + '/me').then(function(response) {
         return response.json();
