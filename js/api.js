@@ -146,6 +146,6 @@ function contacts(me) {
     createElement("span", facebookLink, me.contacts.facebook, "right");
 }
 
-function projects(p){
-    
+function projects(p) {
+
 }
