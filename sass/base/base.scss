@@ -56,6 +56,7 @@ section {
 
 .section-visible {
     z-index: 2;
+    overflow-y: auto;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -64,10 +65,11 @@ section {
 }
 
 .section-hidden {
-    border-radius: 20px !important;
+    overflow: hidden;
+    border-radius: 25px !important;
     z-index: -1;
-    -webkit-border-radius: 20px !important;
-    -moz-border-radius: 20px !important;
-    -ms-border-radius: 20px !important;
-    -o-border-radius: 20px !important;
+    -webkit-border-radius: 25px !important;
+    -moz-border-radius: 25px !important;
+    -ms-border-radius: 25px !important;
+    -o-border-radius: 25px !important;
 }
