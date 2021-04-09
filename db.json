@@ -4,7 +4,7 @@
             "firstName": "Merdi",
             "lastName": "Akelax",
             "picture": "./images/moi.png",
-            "biography": "je suis dans la technologie pour le développement de mon pas"
+            "biography": "je suis dans la technologie pour le développement de mon pays"
         },
         "about": [
             "Bonjour le monde, je suis merdi Akelax j'ai 18 ans,je suis Programmeur Informatique & electronicien.",
@@ -19,28 +19,90 @@
                         "j'ai  des base solide au machine learning"
                     ],
                     "langages": [
-                        ["HTTL5", 79, "yellow", "grey"],
-                        ["CSS3", 75, "yellow", "red"],
-                        ["Javascript", 65, "yellow", "black"],
+                        ["HTTL5", 79, "black", "yellow"],
+                        ["CSS3", 75, "black", "yellow"],
+                        ["JavaScript", 65, "black", "yellow"],
                         ["Python", 90, "blue", "yellow"],
                         ["C++", 55, "blue", "light-blue"]
                     ],
                     "technos": [
-                        ["materializecss", 55, "rose", "rose"],
+                        ["materializecss", 70, "red", "red"],
                         ["Django", 79, "_", "_"],
                         ["react.js", 40, "blue", "blue"],
-                        ["react native", 10, "blue", "blue"],
-                        ["electron.js", 30, "rose", "rose"],
+                        ["react native", 17, "blue", "blue"],
+                        ["electron.js", 40, "bleu", "_"],
                         ["opencv", 60, "yellow", "blue"],
-                        ["tensorflow", 35, "orange", "yellow"]
+                        ["tensorflow", 35, "orange", "red"]
                     ]
                 }
             },
             {
                 "electronic": {
-                    "drawing": "./images/undraw_circuit_sdmr.svg"
+                    "drawing": "./images/undraw_circuit_sdmr.svg",
+                    "para": [
+                        "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
+                        "j'ai  des base solide au machine learning"
+                    ],
+                    "domaines": [
+                        ["Electronique analogique", 59, "black", "yellow"],
+                        ["Electronique numique", 75, "black", "yellow"],
+                        ["Mécatronque", 65, "black", "yellow"],
+                        ["Robotique", 40, "blue", "yellow"],
+                        ["Electricité batiment", 59, "blue", "light-blue"]
+                    ],
+                    "technos": [
+                        ["Pic", 70, "red", "red"],
+                        ["ESp32", 79, "_", "_"],
+                        ["Arduino", 40, "blue", "blue"],
+                        ["Raspeberry", 17, "blue", "blue"],
+                        ["d", 40, "bleu", "_"],
+                        ["opencv", 60, "yellow", "blue"],
+                        ["A.P.I", 35, "orange", "red"]
+                    ]
                 }
             }
-        ]
+        ],
+        "contacts": {
+            "email": "mailto:akelaxmerdi@gmail.com",
+            "tel": "tel:+243816755166",
+            "twiter": "",
+            "facebbok": "",
+            "whatsapp": "tel:+243816755166"
+        },
+        "projects": {
+            "informatic": [{
+                "drawing": "./images/undraw_circuit_sdmr.svg",
+                "title": "xwlxc",
+                "para": [
+                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
+                    "j'ai  des base solide au machine learning"
+                ],
+                "link": "x,;cx"
+            }, {
+                "drawing": "./images/undraw_circuit_sdmr.svg",
+                "title": "xwlxc",
+                "para": [
+                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
+                    "j'ai  des base solide au machine learning"
+                ],
+                "link": "x,;cx"
+            }, {
+                "drawing": "./images/undraw_circuit_sdmr.svg",
+                "title": "xwlxc",
+                "para": [
+                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
+                    "j'ai  des base solide au machine learning"
+                ],
+                "link": "x,;cx"
+            }, {
+                "drawing": "./images/undraw_circuit_sdmr.svg",
+                "title": "xwlxc",
+                "para": [
+                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
+                    "j'ai  des base solide au machine learning"
+                ],
+                "link": "x,;cx"
+            }]
+        }
     }
 }

@@ -39,25 +39,6 @@ function init() {
     seeView(btnHome, ".home");
     seeView(btnProjects, ".projects");
     seeView(btnCv, ".cv");
-    /*     anime({
-            targets: '.anime-lettle',
-            translateY: 300,
-            delay: function(el, i, l) {
-                return i * 15;
-            },
-            endDelay: function(el, i, l) {
-                return (l - i) * 200;
-            }
-        }); */
-    /*    anime({
-           targets: '#view-transition',
-           translateY: {
-               value: 1500,
-               duration: 2000,
-               easing: 'easeInOutQuart'
-           },
-           delay: 2500 // All properties except 'scale' inherit 250ms delay
-       }); */
     nextView()
 
 }
@@ -65,16 +46,20 @@ function init() {
 function nextView() {
     btnNextView = document.getElementsByClassName('btn-next-view');
     btnNextView[0].addEventListener('click', () => {
+        document.querySelector('.projects').classList.replace("section-hidden", "section-visible");
         transiteView(".home", '-33%', 0.25, 'out', 700);
         transiteView(".projects", 0, 1, 'in', 1700);
     })
     btnNextView[1].addEventListener('click', () => {
+        document.querySelector('.cv').classList.replace("section-hidden", "section-visible");
         transiteView(".projects", 0, 0.25, 'out', 700);
         transiteView(".cv", '0', 1, 'in', 1700);
     })
     btnNextView[2].addEventListener('click', () => {
-        transiteView(".home", '-33%', 0.25);
-        transiteView(".projects", 0, 0.25);
+        document.querySelector('.home').classList.replace("section-hidden", "section-visible");
+        /* 
+                document.querySelector('.cv').classList.replace("section-visible", "section-hidden"); */
+        transiteView(".home", '0', 1, 'in');
         transiteView(".cv", '33%', 0.25);
     })
 }

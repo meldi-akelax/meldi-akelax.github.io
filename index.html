@@ -44,13 +44,13 @@
         <div id='view-transition' class="view-transition"></div> -->
 
         <div class="toggle-menu-contnair  toggle-menu-hidden">
-            <nav class="blue">
+            <nav class="blue ">
                 <!-- <div class="col s8 l8 m8">Akelax merdi</div>
                  <button class=" btn right light-blue toggle-menu">menu<i class="material-icons">clear_all</i></button>
                  <button class="col s2 m2 l2 btn waves-effect waves-light light-blue toggle-menu">
                     <i class="material-icons right">clear_all</i>Menu
                   </button> -->
-                <div class="nav-wrapper">
+                <div class="nav-wrapper container">
                     <h5 class="brand-logo left view-title"></h5>
                     <ul class="right ">
                         <li></li><a href="#" class="btn light-blue toggle-menu"><i class="material-icons left">clear_all</i>Menu</a></li>
@@ -118,10 +118,10 @@
 
                         </div>
                     </div>
-                    <div class="col l-3 s-6 m-6 left">
+                    <div class="col s12 m6 l6 left">
                         <div class="header-content-right left">
                             <h4 class="sub-title">Hello, je suis</h4>
-                            <h1 class="title">Merdi Akelax</h1>
+                            <h1 class="title"><strong>Merdi Akelax</strong> </h1>
                             <p id="biography"></p>
                         </div>
                         <!-- header content right -->
@@ -133,14 +133,20 @@
                 </div>
                 <div class="row home-section grey lighten-3">
                     <h3 class="home-section-title">Développeur</h3>
-                    <div id="informatic-para" class="col s12 l6 m6">
+                    <div class="col s12 l6 m6">
+                        <div id="informatic-para" class=" progess-container"></div>
+                        <div id="informatic-langages"></div>
                     </div>
                     <div class="col s12 l6 m6">
                         <img id="informatic-drawing" class="image-drawing" src="" alt="informatic drawing">
                     </div>
+
+                    <div class="container">
+                        <div id="dev-technos" class="col s12 l12 m12">
+                            <h4 class="home-section-title center">technos</h4>
+                        </div>
+                    </div>
                     <div class="col S12 l12 m12 xl12">
-                        <div id="informatic-langages" class="col s12 l6 m6"></div>
-                        <div id="dev-technos" class="col s12 l6 m6"></div>
                     </div>
                 </div>
                 <div class="row home-section light-blue lighten-5">
@@ -149,19 +155,40 @@
                         <img id="electronic-drawing" class="image-drawing" src="" alt="arduino uno">
                     </div>
                     <div class="col s12 l6 m6">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quaerat tempore, natus beatae minus ab nam in consequatur molestias facere.</p>
+                        <div id="technic-para"></div>
+                        <div id="technic-domaine"></div>
+                    </div>
+                    <div class="container">
+                        <div id="technic-technos" class="col s12 l12 m12">
+                            <h4 class="home-section-title center">technos</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="row home-section indigo lighten-5 center">
+                <div id="contact" class="row home-section indigo lighten-5 center">
                     <h3 class="home-section-title">Contact</h3>
                     <div class="col s12 l6 m6  left">
-                        <ul>
-                            <li>
-                                <i class="material-icons prefix">account_circle</i></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <ul class="container">
+                            <li class="row">
+                                <a id="email-link" class="col S12 l12 m12 xl12" href="mailto:akelaxmerdi@gmail.com">
+                                    <i class="material-icons left prefix">account_circle</i>
+                                </a>
+                            </li>
+                            <li class="row">
+                                <a id="tel-link" class="col S12 l12 m12 xl12" href="tel:08157">
+                                </a>
+                            </li>
+                            <li class="row">
+                                <a id="whatsapp-link" class="col S12 l12 m12 xl12" href="">
+                                </a>
+                            </li>
+                            <li class="row">
+                                <a id="twiter-link" class="col S12 l12 m12 xl12" href="">
+                                </a>
+                            </li>
+                            <li class="row">
+                                <a id="facebook-link" class="col S12 l12 m12 xl12" href="">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col s12 l6 m6">
@@ -191,30 +218,29 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <form class="col s12">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <i class="material-icons prefix">mode_edit</i>
-                                                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                                                <label for="icon_prefix2">Message</label>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">mode_edit</i>
+                                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                        <label for="icon_prefix2">Message</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input class="indicator btn blue" type="submit">
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="center">
-                <button class="btn grey lighten-1 btn-next-view"> suivant </button>
+            <div class="center container">
+                <button class="btn grey lighten-1 btn-next-view"> Voir les projects </button>
             </div>
             <!-- header content -->
 
         </section>
         <section class='projects white black-text section-hidden'>
-            <h3>Projects réalisés</h3>
             <div class="container">
+                <h3>Projects réalisés</h3>
                 <div class="row">
                     <div class="col s12 m6 l4">
                         <div class="card">
@@ -311,27 +337,25 @@
                 </div>
             </div>
             <div class="center">
-                <button class="btn grey lighten-1 btn-next-view"> suivant </button>
+                <button class="btn grey lighten-1 btn-next-view"> Voir le cv </button>
             </div>
 
         </section>
         <section class='cv white black-text section-hidden'>
 
             <div class="container">
-                <h2>Curriculim vitae</h2>
+                <h2>CURRICULUL VITAE</h2>
                 <div class="card">
-                    <p>je Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quibusdam quasi deserunt inventore cumque, distinctio ipsum maiores architecto nisi saepe quia explicabo voluptate numquam voluptatem quo perspiciatis quod praesentium
-                        dolorum vero ex laudantium sint enim odit odio. Eaque neque consequatur omnis quasi quis. Vitae quo, nobis ex rerum ipsum voluptates suscipit pariatur voluptate! Eligendi sunt maxime qui porro minus quisquam saepe neque sapiente
-                        doloribus incidunt ducimus, vitae in omnis quis repudiandae illo eum? Porro voluptatum minima totam repudiandae distinctio? Sequi voluptatum, illo mollitia animi suscipit nesciunt labore iusto doloribus deserunt veritatis aspernatur
-                        eius quae fugiat quidem dignissimos nisi, cum laborum, fugit odio. Consequuntur repudiandae et dignissimos molestiae, ducimus quisquam ipsam, dolore nemo eaque delectus at tempore nisi doloremque dicta, in reprehenderit nam sapiente
-                        voluptates dolores tempora dolorum pariatur! Delectus suscipit obcaecati tenetur necessitatibus nulla culpa laborum possimus dolorem qui molestiae excepturi praesentium nostrum cupiditate aut, error architecto explicabo in voluptatum
-                        libero. Autem assumenda doloremque distinctio nihil debitis veniam, aliquid labore vitae aperiam veritatis quis delectus ex, nulla corporis quae perspiciatis qui provident eaque blanditiis? Minus, maxime labore. Quas fuga neque
-                        numquam quisquam non ad ipsum, in saepe error vero, consectetur maiores cumque distinctio dolore nihil. Eligendi eum eaque quibusdam saepe?</p>
+                    <div class="container center">
+
+                        <p>Pour accéder à mon cv télecharger ce fichier s'il voux plait !</p>
+                        <div class="row"><a class="btn green" href="./database/CV.pdf">télecharger</a></div>
+                    </div>
                 </div>
             </div>
 
             <div class="center">
-                <button class="btn grey lighten-1 btn-next-view"> suivant </button>
+                <button class="btn grey lighten-1 btn-next-view">Voir la présentation</button>
             </div>
 
         </section>

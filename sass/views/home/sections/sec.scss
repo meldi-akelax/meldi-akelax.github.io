@@ -1,14 +1,14 @@
 .header-content {
-    border-radius: 5px;
     width: 100%;
     height: 80vh;
     position: relative;
     padding: 20px;
-    background-color: #d7e8f0b6;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    background-color: #d7def0b6;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -190,11 +190,6 @@
     }
 }
 
-.header-content-right {
-    margin-top: 100px;
-    position: relative;
-}
-
 .header-content-right .sub-title {
     font-size: 30px;
     text-transform: uppercase;
@@ -261,26 +256,42 @@
 
 .header-shape img {
     width: 80px;
+    /* 
+    opacity: .7; */
 }
 
 .header-image img {
     z-index: 2;
     width: 250px;
     background-color: rgba(158, 199, 233, 0.815);
-    border-radius: 70% 100% 60% 50%;
-    -webkit-border-radius: 70% 60% 100% 50%;
-    -moz-border-radius: 70% 60% 100% 50%;
-    -ms-border-radius: 70% 60% 100% 50%;
-    -o-border-radius: 70% 60% 100% 50%;
+    border-radius: 70% 50% 100% 60%;
+    -webkit-border-radius: 70% 50% 100% 60%;
+    -moz-border-radius: 70% 50% 100% 60%;
+    -ms-border-radius: 70% 50% 100% 60%;
+    -o-border-radius: 70% 50% 100% 60%;
 }
 
 .home-header-contain {
     margin-top: 100px;
     z-index: 3;
-    @media (max-width: 767px) {
-        img {
-            width: 170px;
-            float: right;
-        }
+}
+
+@media (min-width: 600px) {
+    .header-content-right {
+        margin-top: 100px;
+        position: relative;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-image img {
+        z-index: 2;
+        width: 270px;
+        background-color: rgba(158, 199, 233, 0.815);
+        border-radius: 70% 50% 60% 100%;
+        -webkit-border-radius: 70% 50% 60% 100%;
+        -moz-border-radius: 70% 50% 60% 100%;
+        -ms-border-radius: 70% 50% 60% 100%;
+        -o-border-radius: 70% 50% 60% 100%;
     }
 }
