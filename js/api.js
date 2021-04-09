@@ -136,14 +136,16 @@ function contacts(me) {
     const facebookLink = document.getElementById('facebook-link');
     emailLink.href = me.contacts.email;
     createElement("span", emailLink, me.contacts.email, "right");
-    telLink.href = me.contacts.tel;
-    createElement("span", telLink, me.contacts.tel, "right");
-    whatsappLink.href = me.contacts.whatsapp;
-    createElement("span", whatsappLink, me.contacts.whatsapp, "right");
     twiterLink.href = me.contacts.twiter;
     createElement("span", twiterLink, me.contacts.twiter, "right");
+    /* 
+        alert(me.contacts.facebook); */
     facebookLink.href = me.contacts.facebook;
     createElement("span", facebookLink, me.contacts.facebook, "right");
+    whatsappLink.href = me.contacts.whatsapp;
+    createElement("span", whatsappLink, me.contacts.whatsapp, "right");
+    telLink.href = me.contacts.tel;
+    createElement("span", telLink, me.contacts.tel, "right");
 }
 
 function projects(p) {

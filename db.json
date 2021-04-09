@@ -64,10 +64,10 @@
         ],
         "contacts": {
             "email": "mailto:akelaxmerdi@gmail.com",
-            "tel": "tel:+243816755166",
             "twiter": "https://twitter.com/AkelaxM",
             "facebook": "https://web.facebook.com/merdi.akelax.3",
-            "whatsapp": "tel:+243816755166"
+            "whatsapp": "tel:+243816755166",
+            "tel": "tel:+243816755166"
         },
         "projects": {
             "informatic": [{
