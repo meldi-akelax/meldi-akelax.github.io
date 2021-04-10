@@ -8113,8 +8113,8 @@ input[type=range]::-ms-thumb {
 
 @media (hover: hover) and (pointer: fine) {
   .cursor__circle__visible {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     margin-top: -50%;
     margin-left: -50%;
     border-radius: 50%;
@@ -8521,11 +8521,29 @@ section {
 .section-hidden {
   overflow: hidden;
   border-radius: 25px !important;
-  z-index: -1;
+  z-index: 1;
   -webkit-border-radius: 25px !important;
   -moz-border-radius: 25px !important;
   -ms-border-radius: 25px !important;
   -o-border-radius: 25px !important;
+  transition: 0.4s all;
+  -webkit-transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  -ms-transition: 0.4s all;
+  -o-transition: 0.4s all;
+}
+.section-hidden:hover {
+  cursor: pointer;
+  margin-top: -5px;
+}
+.section-hidden::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,6 +17,14 @@ let display = "";
 
 window.onload = init;
 
+const allSec = document.getElementsByTagName('section');
+for (sec of allSec) {
+    let className = `.${sec.classList[0]}`;
+    if (sec.classList.contains("section-hidden")) {
+        seeView(sec, className);
+    }
+}
+
 function init() {
     /* 
         viewTransition.style.height = '100vh';

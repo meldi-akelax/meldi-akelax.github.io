@@ -59,7 +59,7 @@ function dev(competences) {
         let progressElement = document.createElement('div');
         langageTitle.textContent = langage[0];
         progressElement.classList.add('determinate', langage[2]);
-        progressContainerElement.classList.add('progress', langage[3], "lighten-3");
+        progressContainerElement.classList.add('progress', 'indigo', "lighten-4");
         progressElement.style.width = `${langage[1]}%`
         progressContainerElement.appendChild(progressElement);
         langageElement.appendChild(langageTitle);
@@ -78,7 +78,7 @@ function dev(competences) {
         technoTitle.textContent = techno[0];
         technoProgressElement.style.width = `${techno[1]}%`;
         technoProgressElement.classList.add('determinate', techno[2]);
-        technoProgressContainerElement.classList.add('progress', techno[3], "lighten-3");
+        technoProgressContainerElement.classList.add('progress', 'indigo', "lighten-3");
         technoProgressContainerElement.appendChild(technoProgressElement);
         technoElement.appendChild(technoTitle);
         technoElement.appendChild(technoProgressContainerElement);
@@ -108,7 +108,7 @@ function technician(competences) {
         let progressElement = document.createElement('div');
         langageTitle.textContent = langage[0];
         progressElement.classList.add('determinate', langage[2]);
-        progressContainerElement.classList.add('progress', langage[3], "lighten-3");
+        progressContainerElement.classList.add('progress', 'indigo', "lighten-3");
         progressElement.style.width = `${langage[1]}%`
         progressContainerElement.appendChild(progressElement);
         langageElement.appendChild(langageTitle);
@@ -127,7 +127,7 @@ function technician(competences) {
         technoTitle.textContent = techno[0];
         technoProgressElement.style.width = `${techno[1]}%`;
         technoProgressElement.classList.add('determinate', techno[2]);
-        technoProgressContainerElement.classList.add('progress', techno[3], "lighten-3");
+        technoProgressContainerElement.classList.add('progress', 'indigo', "lighten-3");
         technoProgressContainerElement.appendChild(technoProgressElement);
         technoElement.appendChild(technoTitle);
         technoElement.appendChild(technoProgressContainerElement);
