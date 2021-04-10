@@ -8,7 +8,7 @@ const btnCv = document.getElementById('btn-cv');
 const toggleMenuContnair = document.querySelector('.toggle-menu-contnair');
 const toggleMenu = document.querySelector('.toggle-menu');
 const viewTitle = {
-    ".home": "Présentation",
+    ".home": "Acceuil",
     '.projects': 'Projets',
     ".cv": "Cv"
 }
@@ -17,18 +17,13 @@ let display = "";
 
 window.onload = init;
 
-const allSec = document.getElementsByTagName('section');
+const allSec = document.querySelectorAll('section');
 for (sec of allSec) {
-    let className = `.${sec.classList[0]}`;
-    if (sec.classList.contains("section-hidden")) {
-        seeView(sec, className);
-    }
+    let className = `.${sec.classList[1]}`;
+    seeView(sec, className);
 }
 
 function init() {
-    /* 
-        viewTransition.style.height = '100vh';
-        viewTransition.style.width = '100vw'; */
     const introMessage = document.createElement('div');
     introMessage.classList.add('intro-message');
     const message = 'Bienvenu_Chez_Merdi_Akelax !';
@@ -38,9 +33,8 @@ function init() {
         lettleSpan.textContent = lettle;
         introMessage.appendChild(lettleSpan);
     }
-    /* 
-        viewTransition.appendChild(introMessage); */
 
+    document.querySelector('.home').classList.replace("section-hidden", "section-visible");
     transiteView(".home", '0', 1, 'in', 2);
     transiteView(".projects", 0, 0.3, 'out', 0.1);
     transiteView(".cv", '33%', 0.3, 'out', 0);
@@ -65,8 +59,6 @@ function nextView() {
     })
     btnNextView[2].addEventListener('click', () => {
         document.querySelector('.home').classList.replace("section-hidden", "section-visible");
-        /* 
-                document.querySelector('.cv').classList.replace("section-visible", "section-hidden"); */
         transiteView(".home", '0', 1, 'in');
         transiteView(".cv", '33%', 0.27);
     })
@@ -95,7 +87,6 @@ function transiteView(v, x, s, direction = 'out', time = 1500) {
                 if (direction == 'in') {
                     document.body.style.display = 'block';
                     toggleMenuContnair.classList.replace("toggle-menu-hidden", "toggle-menu-visible");
-                    view.classList.replace("section-hidden", "section-visible");
                     document.querySelector('.view-title').textContent = viewTitle[v];
                 }
                 if (direction == 'out') {
@@ -125,13 +116,24 @@ function transiteView(v, x, s, direction = 'out', time = 1500) {
 }
 
 function seeView(btn, view) {
-    btn.addEventListener('click', () => {
-        document.querySelector(view).classList.replace("section-hidden", "section-visible");
-        display = view;
-        /* 
-                header.className = 'header-hidden'; */
-        transiteView(view, '0', 1, 'in')
-    });
+    if (btn.classList.contains('btn')) {
+        btn.addEventListener('click', () => {
+            document.querySelector(view).classList.replace("section-hidden", "section-visible");
+            display = view;
+            transiteView(view, '0', 1, 'in')
+        });
+    }
+
+    if (btn.classList.contains('section')) {
+        btn.addEventListener('click', () => {
+            if (btn.classList.contains("section-hidden")) {
+                document.querySelector(view).classList.replace("section-hidden", "section-visible");
+                display = view;
+                transiteView(view, '0', 1, 'in')
+            }
+        });
+    }
+
 }
 
 toggleMenu.addEventListener('click', () => {

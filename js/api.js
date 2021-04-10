@@ -143,15 +143,15 @@ function contacts(contacts) {
     const twiterLink = document.getElementById('twiter-link');
     const facebookLink = document.getElementById('facebook-link');
     emailLink.href = contacts.email;
-    createElement("span", emailLink, contacts.email, ["right"]);
+    createElement("span", emailLink, contacts.email, ["_"]);
     twiterLink.href = contacts.twiter;
-    createElement("span", twiterLink, contacts.twiter, ["right"]);
+    createElement("span", twiterLink, contacts.twiter, ["_"]);
     facebookLink.href = contacts.facebook;
-    createElement("span", facebookLink, contacts.facebook, ["right"]);
+    createElement("span", facebookLink, contacts.facebook, ["_"]);
     whatsappLink.href = contacts.whatsapp;
-    createElement("span", whatsappLink, contacts.whatsapp, ["right"]);
+    createElement("span", whatsappLink, contacts.whatsapp, ["_"]);
     telLink.href = contacts.tel;
-    createElement("span", telLink, contacts.tel, ["right"]);
+    createElement("span", telLink, contacts.tel, ["_"]);
 }
 
 fetch(link + '/projects').then(function(response) {

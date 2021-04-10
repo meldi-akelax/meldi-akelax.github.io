@@ -1,0 +1,22 @@
+{
+    "name": "merdi-akelax.github.io",
+    "version": "1.0.0",
+    "description": "my web-site portfolio",
+    "main": "index.js",
+    "scripts": {
+        "go": "sass sass/main.scss css/style.css --watch  && json-serve db.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/merdi-akelax/merdi-akelax.github.io.git"
+    },
+    "keywords": [
+        "azer"
+    ],
+    "author": "merdi akelax",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/merdi-akelax/merdi-akelax.github.io/issues"
+    },
+    "homepage": "https://github.com/merdi-akelax/merdi-akelax.github.io#readme"
+}

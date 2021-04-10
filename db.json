@@ -4,17 +4,16 @@
             "firstName": "Merdi",
             "lastName": "Akelax",
             "picture": "./images/moi.png",
-            "biography": "je suis dans la technologie pour le développement de mon pays"
+            "biography": "mon but est votre totale satifaction"
         },
         "about": [
-            "Bonjour le monde, je suis merdi Akelax j'ai 18 ans,je suis Programmeur Informatique & electronicien.",
-            "Comme Programmeur je fait du développement web, desktop, mobile, Ai(deep learning).",
-            "En electronique, je fait de la domotique, la mecatronique, ..."
+            "Bonjour le monde, je suis merdi Akelax j'ai 18 ans,je suis développeur Informatique & electronicien. Comme Programmeur je fait du développement web(front & back), desktop, mobile et du machine learning (deep learning).",
+            "Et comme electronicien, j'ai 4ans d'experience (dans l'electronique numerique, les microcontrôleurs) je fait de la domotique, la mecatronique, ..."
         ],
         "contacts": {
             "email": "mailto:akelaxmerdi@gmail.com",
-            "twiter": "twitter.com/AkelaxM",
-            "facebook": "web.facebook.com/merdi.akelax.3",
+            "twiter": "https://twitter.com/AkelaxM",
+            "facebook": "https://web.facebook.com/merdi.akelax.3",
             "whatsapp": "tel:+243816755166",
             "tel": "tel:+243816755166"
         }
