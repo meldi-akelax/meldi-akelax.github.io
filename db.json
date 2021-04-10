@@ -26,20 +26,20 @@
                     "j'ai  des base solide au machine learning"
                 ],
                 "langages": [
-                    ["HTTL5", 79, "black", "indigo"],
-                    ["CSS3", 75, "black", "yellow"],
-                    ["JavaScript", 65, "black", "yellow"],
+                    ["HTTL5", 79, "blue", "indigo"],
+                    ["CSS3", 75, "blue", "yellow"],
+                    ["JavaScript", 65, "blue", "yellow"],
                     ["Python", 90, "blue", "yellow"],
-                    ["C++", 55, "blue", "light-blue"]
+                    ["C++", 55, "blue", "indigo"]
                 ],
                 "technos": [
-                    ["materializecss", 70, "red", "red"],
+                    ["materializecss", 70, "blue", "indigo"],
                     ["Django", 79, "_", "_"],
-                    ["react.js", 40, "blue", "blue"],
-                    ["react native", 17, "blue", "blue"],
-                    ["electron.js", 40, "bleu", "_"],
-                    ["opencv", 60, "yellow", "blue"],
-                    ["tensorflow", 35, "orange", "red"]
+                    ["react.js", 40, "blue", "indigo"],
+                    ["react native", 17, "blue", "indigo"],
+                    ["electron.js", 40, "bleu", "indigo"],
+                    ["opencv", 60, "blue", "indigo"],
+                    ["tensorflow", 35, "blue", "indigo"]
                 ]
             }
         },
@@ -51,18 +51,18 @@
                     "j'ai  des base solide au machine learning"
                 ],
                 "domaines": [
-                    ["Electronique analogique", 59, "black", "grey"],
-                    ["Electronique numique", 75, "red", "yellow"],
-                    ["Mécatronque", 65, "light-blue", "red"],
-                    ["Robotique", 40, "black", "red"],
-                    ["Electricité batiment", 59, "red", "yellow"]
+                    ["Electronique analogique", 59, "blue", "indigo"],
+                    ["Electronique numique", 75, "blue", "indigo"],
+                    ["Mécatronque", 65, "blue", "indigo"],
+                    ["Robotique", 40, "blue", "indigo"],
+                    ["Electricité batiment", 59, "blue", "indigo"]
                 ],
                 "technos": [
-                    ["Pic", 70, "red", "red"],
-                    ["ESp32", 79, "_", "_"],
-                    ["Arduino", 90, "blue", "blue"],
-                    ["Raspeberry", 45, "red", "grey"],
-                    ["A.P.I", 35, "orange", "grey"]
+                    ["Pic", 70, "blue", "indigo"],
+                    ["ESp32", 79, "blue", "indigo"],
+                    ["Arduino", 90, "blue", "indigo"],
+                    ["Raspeberry", 45, "blue", "indigo"],
+                    ["A.P.I", 35, "blue", "indigo"]
                 ]
             }
         }
