@@ -54,6 +54,8 @@ function dev(competences) {
     let langageListContainerElement = document.createElement('ul');
     for (langage of competences[0].informatic.langages) {
         let langageElement = document.createElement('li');
+        let Title = document.createElement('h5');
+        Title.textContent = 'Les langages utilisés';
         let langageTitle = document.createElement('h6');
         let progressContainerElement = document.createElement('div');
         let progressElement = document.createElement('div');
@@ -64,6 +66,7 @@ function dev(competences) {
         progressContainerElement.appendChild(progressElement);
         langageElement.appendChild(langageTitle);
         langageElement.appendChild(progressContainerElement);
+        langageListContainerElement.appendChild(Title);
         langageListContainerElement.appendChild(langageElement);
     }
     informaticLangages.appendChild(langageListContainerElement);
