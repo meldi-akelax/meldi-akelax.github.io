@@ -7,7 +7,7 @@
             "biography": "mon but est votre totale satifaction"
         },
         "about": [
-            "Bonjour le monde, je suis merdi Akelax j'ai 18 ans,je suis développeur Informatique & electronicien. Comme Programmeur je fait du développement web(front & back), desktop, mobile et du machine learning (deep learning).",
+            "Bonjour le monde, je suis merdi Akelax ,je suis développeur Informatique & electronicien. Comme Programmeur je fait du développement web(front & back), desktop, mobile et du machine learning (deep learning).",
             "Et comme electronicien, j'ai 4ans d'experience (dans l'electronique numerique, les microcontrôleurs) je fait de la domotique, la mecatronique, ..."
         ],
         "contacts": {
@@ -22,14 +22,14 @@
             "informatic": {
                 "drawing": "./images/undraw_web_developer_p3e5.svg",
                 "para": [
-                    "Etant développeur web, desktop & mobile je j'ai 25ans de carriére",
-                    "j'ai  des base solide au machine learning"
+                    "3ans dans le développement web",
+                    "et 2ans dans l'intélligence artificielle"
                 ],
                 "langages": [
-                    ["HTTL5", 79, "blue", "indigo"],
-                    ["CSS3", 75, "blue", "yellow"],
-                    ["JavaScript", 65, "blue", "yellow"],
-                    ["Python", 90, "blue", "yellow"],
+                    ["HTTL5", 90, "blue", "indigo"],
+                    ["CSS3", 85, "blue", "yellow"],
+                    ["JavaScript", 75, "blue", "yellow"],
+                    ["Python", 95, "blue", "yellow"],
                     ["C++", 55, "blue", "indigo"]
                 ],
                 "technos": [
@@ -61,7 +61,7 @@
                     ["Pic", 70, "blue", "indigo"],
                     ["ESp32", 79, "blue", "indigo"],
                     ["Arduino", 90, "blue", "indigo"],
-                    ["Raspeberry", 45, "blue", "indigo"],
+                    ["Raspeberry", 65, "blue", "indigo"],
                     ["A.P.I", 35, "blue", "indigo"]
                 ]
             }
